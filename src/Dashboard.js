@@ -19,7 +19,7 @@ class Dashboard extends React.Component{
     }
 
     componentDidMount(){
-        //this.interval = setInterval(this.poll, this.state.delay);
+        this.interval = setInterval(this.poll, this.state.delay);
         this.poll();
     }
 
@@ -67,11 +67,11 @@ class Dashboard extends React.Component{
                 <span>🧁</span>
             </div>
         </Row>
-        {/* <Row>
+        { <Row>
             <div className="">
                 <Leaderboard title={"Test"} leaders={this.state.teamLeaders}/>
             </div>
-        </Row>*/}</>
+        </Row>}</>
     }
 }
 
